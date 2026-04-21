@@ -36,6 +36,11 @@
 *.x86_64
 *.hex
 
+# Ignore all files that do not have a dot in the name (executables)
+*
+!*/
+!*.*
+
 # Debug files
 *.dSYM/
 *.su
@@ -53,3 +58,10 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# clang-format
+.clang-format
+
+# Ensure source and headers are included
+!*.c
+!*.h
